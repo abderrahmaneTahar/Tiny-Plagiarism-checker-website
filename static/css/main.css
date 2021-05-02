@@ -1,0 +1,214 @@
+body{
+    margin: 0;
+    padding: 0;
+    /*background:  linear-gradient(135deg, rgba(37, 68, 241, 0.52), rgba(19, 117, 76, 0.73)),url('background.jpg') no-repeat ;;*/
+    background: url('../images/10.png');
+    
+
+}
+.container{
+background:linear-gradient(rgb(30 36 211 / 52%), rgb(32 209 86 / 73%));/*135deg, rgba(30, 175, 211, 0.52), rgba(32, 209, 171, 0.73)*/
+
+height: 100vh;
+width: 100%;
+top: 0;
+position: relative;
+}
+input{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+z-index: 2;
+    
+}
+.overlay{
+    z-index: 5;
+    top: 00%;
+    left: 50%;
+    transform: translate(-55%,-55%);
+    position: absolute;
+    font-family: fantasy;
+    font-size: 40PX;
+    box-shadow: 0 0   20PX black;
+    animation: up 2s ease;
+    color: whitesmoke;
+    border-radius: 5px;
+
+}
+@keyframes up{
+    0%{
+        top: -100px;
+    }
+    100%{
+        top: 0;
+    }}
+
+img{
+    top: 30%;
+    left: 50%;
+    transform: translate(-55%,-55%);
+    position: relative;
+    animation: zom 1s ease;
+    transition: all 2s ease;
+    }
+@keyframes zom{
+    
+    0%{
+        opacity: 0;};
+        50%{
+            opacity: 0.5;};
+    
+
+    100%{opacity: 1;}}
+    
+
+.upload{
+    font-size:16PX ;
+    background: rgba(255, 255, 255, 0.712);
+    box-shadow: 5PX 5PX 10PX black;
+    width: 350PX;
+    outline: none;
+    border-radius: 30PX ;
+    cursor: no-drop;
+    animation: move 2s  ease ;
+    transition: all 1s ease;
+    animation-iteration-count:1;
+    animation-direction:alternate;
+    animation-play-state:running; 
+}
+@keyframes move{
+    0%{
+        width: 0;
+        left: -100px;
+    }
+    100%{
+        width: 350PX;
+        left: 50%;
+    }
+}
+::-webkit-file-upload-button{
+    color: whitesmoke;
+    background: #206a5d;
+    padding: 20PX;
+    border: none;
+    border-radius: 50PX;
+    box-shadow:0PX 0  10PX rgb(22, 21, 22)9;
+    outline: none;
+    cursor:pointer;
+}
+::-webkit-file-upload-button:hover{
+    background: linear-gradient(135deg, rgba(21, 29, 80, 0.52), rgba(19, 117, 76, 0.73));
+
+}
+
+button{
+    cursor: pointer;
+    font-size: 20PX;
+    padding: 15PX 15PX;
+    margin: 0 auto;
+    border-radius: 5PX;
+    color: green;
+    background: whitesmoke;
+    border: 1px solid green;
+    width: 120PX;
+    height: 50PX;
+    position: relative;
+    top: 60%;
+    left: 37%;
+    transform: translate(-50%,-50%);
+    animation: bt 1s;
+
+}
+@keyframes bt {
+    0%{
+       opacity: 0;
+        
+    }
+    50%{
+        opacity: 0;
+         
+     }
+ 
+    100%{
+       opacity: 1;
+        
+    }
+
+}
+button:hover{
+    background-color: rgb(23, 187, 23);
+    color: whitesmoke;
+}
+/*animate background*/
+.box div {
+    position: absolute;
+    height: 60PX;
+    width: 60PX;
+    background: transparent;
+    border: 6px solid rgb(255, 255, 255,0.8);
+    /*border-radius: 50%;
+    border-bottom-left-radius: 10PX;*/
+}
+.box div:nth-child(1){
+    top: 12%;
+    left: 42%;
+    animation: anime 10s linear infinite;
+}
+.box div:nth-child(2){
+    top: 70%;
+    left: 50%;
+    animation: anime 7s linear infinite;
+}
+.box div:nth-child(3){
+    top: 17%;
+    left: 6%;
+    animation: anime 9s linear infinite;
+}
+.box div:nth-child(4){
+    top: 20%;
+    left: 60%;
+    animation: anime 10s linear infinite;
+}
+.box div:nth-child(5){
+    top: 67%;
+    left: 10%;
+    animation: anime 6s linear infinite;
+}
+.box div:nth-child(6){
+    top: 80%;
+    left: 70%;
+    animation: anime 12s linear infinite;
+}
+.box div:nth-child(7){
+    top: 60%;
+    left: 80%;
+    animation: anime 15s linear infinite;
+}
+.box div:nth-child(8){
+    top: 32%;
+    left: 25%;
+    animation: anime 16s linear infinite;
+}
+.box div:nth-child(9){
+    top: 90%;
+    left: 25%;
+    animation: anime 9s linear infinite;
+}
+.box div:nth-child(10){
+    top: 20%;
+    left: 80%;
+    animation: anime 5s linear infinite;
+}
+
+@keyframes anime {
+  0%{
+    transform: scale(0) translateY(0) rotate(0);
+    opacity: 1;
+  } 
+  100%{
+    transform: scale(1.5) translateY(-90PX) rotate(360deg);
+    opacity:0;
+
+  } 
+}
