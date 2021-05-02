@@ -8,7 +8,7 @@ def search(phrase):
     headers = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit 537.36 (KHTML, like Gecko) Chrome"}
     page = requests.get(url, headers=headers)
     soup = BeautifulSoup(page.content, "html.parser")
-    return [link.find("a")["href"] for link in soup.find_all(class_="yuRUbf")[:2]]
+    return [link.find("a")["href"] for link in soup.find_all(class_="yuRUbf")[:5]]
 
 
 def get_top_texts(phrase):
